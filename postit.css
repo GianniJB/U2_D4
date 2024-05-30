@@ -8,6 +8,8 @@ main {
 /* DIV caratteristiche comuni a tutti i post it */
 
 div {
+  transition: 1s 0.5s; /* 0.5 durata cambiamento - 0.2 con quanto delay avviene */
+  /* transition: box-shadow 1s; */ /* SI SOVRASCRIVE?MI ANNULLA TIME E DELAY DELLA PRECEDENTE */
   display: inline-block;
   position: relative;
   width: 200px;

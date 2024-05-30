@@ -19,7 +19,7 @@ main {
 /* DIV caratteristiche comuni a tutti i post it */
 
 div {
-  transition: 1s 0.5s; /* 0.5 durata cambiamento - 0.2 con quanto delay avviene */
+  transition: 1s ease 0.5s; /* 1s quanto dura - 0.2 ritardo di avvio */
   /* transition: box-shadow 1s; */ /* SI SOVRASCRIVE?MI ANNULLA TIME E DELAY DELLA PRECEDENTE */
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ div {
 
 .selected:hover {
   transform: scale(1.2, 1.2) rotateZ(0deg); /* scale ingrandisce rotateZ li raddrizza */
-  box-shadow: 10px 10px 15px #3d3939;
+  box-shadow: 0px 5px 20px 5px #3d3939;
   z-index: 10;
 }
 

@@ -29,8 +29,10 @@ div {
   width: 200px;
   height: 200px;
   background-image: linear-gradient(3deg, #00000055, transparent, #00000055);
+  box-shadow: 1px 1px 10px #3d3939;
   text-align: center;
   cursor: pointer;
+  animation: falling 1s; /* O-O */
 }
 
 .selected:hover {
@@ -42,17 +44,23 @@ div {
 .type1 {
   background-color: #ffeb3b;
   transform: rotateZ(8deg);
-  box-shadow: 1px 1px 10px #3d3939;
 }
 
 .type2 {
   background-color: #99ebf5;
   transform: rotateZ(-10deg);
-  box-shadow: 1px 1px 10px #3d3939;
 }
 
 .type3 {
   background-color: #98e9a6;
   transform: rotateZ(-20deg);
-  box-shadow: 1px 1px 10px #3d3939;
+}
+
+@keyframes falling {
+  from {
+    transform: scale(2.2, 2.2);
+  }
+  to {
+    transform: scale(1.1, 1.1);
+  }
 }
